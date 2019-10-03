@@ -1,4 +1,5 @@
 ﻿
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,7 +35,8 @@ public class QTMConnector : MonoBehaviour
         // If a server is found at the correct host, connect to the server
         if (foundServer)
         {
-            rtClient.Connect(server, 4545, true, true, false, false, false, false);
+            rtClient.Connect(server, 4545, true, true, false, false, false);
         }
     }
 }
+
