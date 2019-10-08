@@ -1,5 +1,3 @@
-﻿
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,13 +17,11 @@ public class QTMConnector : MonoBehaviour
     {
         // Get the global RTClient object from the Qualisys system
         rtClient = RTClient.GetInstance();
-
+    
         // Loop through discovered servers to find one that matches our needs
-        foreach (var discoveryResponse in rtClient.GetServers())
-        {
+        foreach (var discoveryResponse in rtClient.GetServers()) {
             // Check if the response has the right IP address
-            if (discoveryResponse.IpAddress == host)
-            {
+            if (discoveryResponse.IpAddress == host) {
                 Debug.Log("Desired Host Found");
                 server = discoveryResponse;
                 foundServer = true;
@@ -33,10 +29,8 @@ public class QTMConnector : MonoBehaviour
         }
 
         // If a server is found at the correct host, connect to the server
-        if (foundServer)
-        {
+        if (foundServer) {
             rtClient.Connect(server, 4545, true, true, false, false, false);
         }
     }
 }
-
