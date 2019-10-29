@@ -15,14 +15,13 @@ public class PlayAudio : MonoBehaviour
 
     void Update()
     {
-        
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Object Hit");
-        if(other.tag == "Point")
+        Debug.Log(other.tag);
+        if (other.tag == "Point")
         {
             AudioClip.Play();
         }
