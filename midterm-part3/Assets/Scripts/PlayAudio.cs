@@ -20,9 +20,10 @@ public class PlayAudio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
+     
         if (other.tag == "Point")
         {
+            Debug.Log(other.tag);
             AudioClip.Play();
         }
     }
