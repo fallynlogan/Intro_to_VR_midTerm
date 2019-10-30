@@ -1,15 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioSource : MonoBehaviour
+public class playAudio2 : MonoBehaviour
 {
-    public AudioSource AudioClip;
+    public AudioSource myAudioClip;
   
 
     void Start()
     {
-
+       myAudioClip = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -19,11 +20,12 @@ public class AudioSource : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+        Debug.Log(other.tag);
         if (other.tag == "Point")
         {
             Debug.Log(other.tag);
-            AudioClip.Play();
+            myAudioClip.Play();
         }
     }
+
 }

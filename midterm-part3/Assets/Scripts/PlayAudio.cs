@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayAudio : MonoBehaviour
+public class playAudio : MonoBehaviour
 {
     public AudioSource AudioClip;
     public float Semitones;
 
     void Start()
     {
+        AudioClip = GetComponent<AudioSource>();
         // 1.05946 ^ n changes pitch of audioclip by n semitones
         AudioClip.pitch += Mathf.Pow(1.05946f, Semitones);
+
     }
 
     void Update()
@@ -20,11 +22,15 @@ public class PlayAudio : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-     
+
         if (other.tag == "Point")
         {
             Debug.Log(other.tag);
             AudioClip.Play();
+        }
+        else
+        {
+            AudioClip.Stop();
         }
     }
 }
