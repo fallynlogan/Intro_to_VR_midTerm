@@ -3,7 +3,47 @@ guid: a363d1b4a7c1bce4db8ec716051875a5
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hangfalalulbelso
+    second: {fileID: 2100000, guid: 88e19c2d7885e59459edad05e5caa38b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hangfalaslo
+    second: {fileID: 2100000, guid: bd32ac32d4f0ad54c9d882ded8f5089f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hangfalfelso
+    second: {fileID: 2100000, guid: fde825112b601dc4ca775a9fbbcbfb06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hangfalfelsobelul
+    second: {fileID: 2100000, guid: d7342d8e5a0d50c4d8668c2fe30c8446, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hangfaltest
+    second: {fileID: 2100000, guid: 0979c2dea001ef844a1fee67bceaf66e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "k\xF6zepdisz"
+    second: {fileID: 2100000, guid: aa303b8ac67553b45b253b7955f0f7d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: labak
+    second: {fileID: 2100000, guid: 74e5f4a7e08fdb9419d7d214c1dcff51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: srews
+    second: {fileID: 2100000, guid: 1b615821635bf0b4795ab6b0afe3a79b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
