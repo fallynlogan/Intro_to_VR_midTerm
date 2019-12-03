@@ -9,13 +9,6 @@ public class PenStroke : MonoBehaviour
     private bool isDrawing = false;
     public float minDistance = 0.01f; // Distance required to move the pen before a point will be added
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
-
-    // Update is called once per frame
     void Update()
     {
         // Check if button is down

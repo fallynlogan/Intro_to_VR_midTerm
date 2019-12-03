@@ -4,24 +4,22 @@ using UnityEngine;
 
 public class PlayAudio : MonoBehaviour
 {
-    public AudioSource AudioClip;
+    private AudioSource AudioClip;
     public float Semitones;
 
     void Start()
     {
-        // 1.05946 ^ n changes pitch of audioclip by n semitones
-        AudioClip.pitch += Mathf.Pow(1.05946f, Semitones);
-    }
+        AudioClip = GetComponent<AudioSource>();
 
-    void Update()
-    {
-        
+        // 1.05946 ^ n changes pitch of audioclip by n semitones
+        AudioClip.pitch += Mathf.Pow(1.0594631f, Semitones);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Point")
+        if (other.tag == "Point")
         {
+            //Debug.Log(other.tag);
             AudioClip.Play();
             Debug.Log(other.tag);
         }
